@@ -1,0 +1,49 @@
+@import "theme";
+
+.container {
+  max-width: $maxWidthContainer;
+}
+
+.header {
+  margin-top: 12px;
+}
+
+.search-input {
+  width: 100%;
+  background: #EAECF0;
+  border-radius: 10px;
+  padding: 16px 0 15px 17px;
+}
+
+.search, ::placeholder {
+  font-family: $input;
+  font-size: 16px;
+  font-weight: 500;
+  color: $fontColor;
+}
+
+
+h1 {
+  font-family: $h1;
+  font-size: 36px;
+  font-weight: 800;
+  color: $fontColor;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.filter {
+
+  background-color: #2CB67D;
+  border-radius: 13px;
+  padding: 16px 20px 15px;
+}
+
+.filter-name {
+  color: white;
+  font-size: 14px;
+  font-family: $input;
+  font-weight: 600;
+
+}
+
+

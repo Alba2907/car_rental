@@ -1,0 +1,109 @@
+// Обнуление------------------------------------------------------------------------------------------------------------
+
+.wrapper {
+  min-height: 100%;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  font-size: 16px;
+  //background: #333;
+  color: #fff;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  & body._lock {
+    overflow: hidden;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+img {
+  vertical-align: top;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    color: cornflowerblue;
+  }
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  color: white;
+}
+
+
+
+// Шрифты---------------------------------------------------------------------------------------------------------------
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap&subset=cyrillic-ext');
+@import url('https://db.onlinewebfonts.com/c/8e513fd9282074cd952d831f400e3bc0?family=Minion+Pro&display=swap&subset=cyrillic-ext');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+// Шрифт по умолчанию---------------------------------------------------------------------------------------------------
+$fontFamily: "Manrope";
+$fontStyle: "400";
+$fontWeight: "400";
+$fontColor: #16161A;
+$lineHeight: 157%;
+$h1: "Baloo 2";
+$input: "Inter";
+
+// Переменные-----------------------------------------------------------------------------------------------------------
+
+$minWidth: 376px;
+$maxWidth: 1920px;
+$maxWidthContainer: 1440px;
+$md1: $maxWidthContainer +12px;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 497.98;
+$br-min: 376;
+$br-max: 1920;
+
+// Экстрамалые девайсы («телефоны», < 576px)----------------------------------------------------------------------------
+// Нет @media, т.к. это по умолчанию в Bootstrap------------------------------------------------------------------------
+
+// Малые девайсы («ландшафтные телефоны», >= 576px)---------------------------------------------------------------------
+@media (min-width: 576px) {  }
+
+// Средние девайсы («таблетки», >= 768px)-------------------------------------------------------------------------------
+@media (min-width: 768px) {  }
+
+// Большие девайсы (десктопы, >= 992px)---------------------------------------------------------------------------------
+@media (min-width: 992px) {  }
+
+// Экстрабольшие девайсы (большие десктопы, >= 1200px)------------------------------------------------------------------
+@media (min-width: 1200px) { }
+
+// Общие свойства-------------------------------------------------------------------------------------------------------
+
+button {
+  display: block;
+}
+
